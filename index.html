@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b18">
+  <meta name="description" content="Akanksha Choure — Java Full Stack Developer Portfolio">
+  <title>Akanksha Choure | Developer Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="header" id="header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#home" class="logo"><span>&lt;</span>akanksha<span>/&gt;</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks" type="button">
+        <span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link contact-link">Let's Talk ↗</a>
+        <button id="themeToggle" class="theme-toggle" aria-label="Switch theme" type="button">☼</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-content reveal">
+        <div class="availability"><span class="status-dot"></span> OPEN TO OPPORTUNITIES</div>
+        <p class="eyebrow">HELLO, WORLD! I'M</p>
+        <h1>Akanksha<br><span class="gradient-text">Choure.</span></h1>
+        <h2 class="role-line">I'm a <span id="roleText">Java Developer</span><span class="typing-cursor">|</span></h2>
+        <p class="hero-description">I build modern web experiences by combining clean code, creative thinking and a passion for technology.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Explore My Work <span>↗</span></a>
+          <a href="#contact" class="btn btn-outline">Let's Connect</a>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/Akanksha11-05" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <span></span>
+          <a href="https://www.linkedin.com/in/akanksha-choure-627214323/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <span></span>
+          <a href="mailto:akankshachoure11@gmail.com">Email ↗</a>
+        </div>
+      </div>
+
+      <!-- Developer code-window visual inspired by your reference image -->
+      <div class="hero-visual reveal" aria-label="Animated developer code illustration">
+        <div class="code-window">
+          <div class="code-window-top">
+            <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span class="file-name">Developer.java</span>
+            <span class="window-symbol">⌘</span>
+          </div>
+          <div class="code-body" aria-hidden="true">
+            <div class="code-line"><span class="line-number">01</span><code><span class="syntax-purple">public class</span> <span class="syntax-blue">Developer</span> {</code></div>
+            <div class="code-line"><span class="line-number">02</span><code>&nbsp;&nbsp;<span class="syntax-purple">String</span> name = <span class="syntax-green">"Akanksha"</span>;</code></div>
+            <div class="code-line"><span class="line-number">03</span><code>&nbsp;&nbsp;<span class="syntax-purple">String</span> role = <span class="syntax-green">"Java Developer"</span>;</code></div>
+            <div class="code-line"><span class="line-number">04</span><code>&nbsp;&nbsp;<span class="syntax-purple">boolean</span> curious = <span class="syntax-yellow">true</span>;</code></div>
+            <div class="code-line code-gap"><span class="line-number">05</span><code>&nbsp;</code></div>
+            <div class="code-line"><span class="line-number">06</span><code>&nbsp;&nbsp;<span class="syntax-purple">void</span> <span class="syntax-blue">build</span>() {</code></div>
+            <div class="code-line"><span class="line-number">07</span><code>&nbsp;&nbsp;&nbsp;&nbsp;learn();</code></div>
+            <div class="code-line"><span class="line-number">08</span><code>&nbsp;&nbsp;&nbsp;&nbsp;create();</code></div>
+            <div class="code-line"><span class="line-number">09</span><code>&nbsp;&nbsp;&nbsp;&nbsp;improve();</code></div>
+            <div class="code-line"><span class="line-number">10</span><code>&nbsp;&nbsp;}</code></div>
+            <div class="code-line"><span class="line-number">11</span><code>}</code></div>
+          </div>
+          <div class="code-window-bottom">
+            <span><i class="status-dot"></i> Always learning</span>
+            <span>Java · Web</span>
+          </div>
+        </div>
+
+        <div class="floating-chip chip-java">
+          <span class="chip-icon">☕</span>
+          <div><strong>Java SprintBoot</strong><small>Backend</small></div>
+        </div>
+        <div class="floating-chip chip-react">
+          <span class="chip-icon">⌘</span>
+          <div><strong>Frontend</strong><small>Web experiences</small></div>
+        </div>
+        <div class="visual-label">BUILDING IDEAS INTO REALITY</div>
+      </div>
+
+      <a href="#about" class="scroll-cue"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="stats container reveal" aria-label="Portfolio highlights">
+      <div class="stat-item"><span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span><p>Projects Showcased</p></div>
+      <div class="stat-item"><span class="stat-number" data-count="8">0</span><span class="stat-plus">+</span><p>Core Technologies</p></div>
+      <div class="stat-item"><span class="stat-number">∞</span><p>Ideas to Explore</p></div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading reveal">
+        <span class="section-kicker">01 / ABOUT ME</span>
+        <h2>More than code.<br><span class="gradient-text">A mindset to create.</span></h2>
+      </div>
+      <div class="about-grid">
+        <article class="glass-card about-card reveal">
+          <div class="card-icon">&lt;/&gt;</div>
+          <h3>Hey, I'm Akanksha!</h3>
+          <p>I'm a Computer Engineering graduate from Savitribai Phule Pune University with a strong interest in Java Full Stack Development.</p>
+          <p>I enjoy creating responsive interfaces, learning backend technologies and turning ideas into practical web applications. I'm continuously improving my skills through hands-on projects and learning.</p>
+          <a href="#contact" class="text-link">Let's build something <span>↗</span></a>
+        </article>
+        <div class="about-side reveal">
+          <article class="glass-card mini-card"><span class="mini-icon">01</span><div><h3>Creative Thinking</h3><p>Thoughtful design and user-friendly interfaces.</p></div></article>
+          <article class="glass-card mini-card"><span class="mini-icon">02</span><div><h3>Problem Solving</h3><p>Breaking problems into simple solutions.</p></div></article>
+          <article class="glass-card mini-card"><span class="mini-icon">03</span><div><h3>Always Learning</h3><p>Growing through practice and new challenges.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-heading reveal">
+        <span class="section-kicker">02 / MY TOOLKIT</span>
+        <h2>Technologies I <span class="gradient-text">work with.</span></h2>
+        <p>My current toolkit for building web applications.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card glass-card reveal"><div class="skill-heading"><span>☕</span><h3>Backend Development</h3></div><div class="skill-tags"><span>Java</span><span>Advanced Java</span><span>JDBC</span><span>Spring Boot</span><span>REST APIs</span></div></article>
+        <article class="skill-card glass-card reveal"><div class="skill-heading"><span>◈</span><h3>Frontend Development</h3></div><div class="skill-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React.js</span></div></article>
+        <article class="skill-card glass-card reveal"><div class="skill-heading"><span>▤</span><h3>Database</h3></div><div class="skill-tags"><span>MySQL</span><span>SQL</span><span>CRUD Operations</span></div></article>
+        <article class="skill-card glass-card reveal"><div class="skill-heading"><span>⌘</span><h3>Tools &amp; Concepts</h3></div><div class="skill-tags"><span>Git</span><span>GitHub</span><span>OOP</span><span>VS Code</span><span>Responsive Design</span></div></article>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading reveal">
+        <span class="section-kicker">03 / SELECTED WORK</span>
+        <h2>Things I've <span class="gradient-text">created.</span></h2>
+        <p>A selection of my projects and practical learning.</p>
+      </div>
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all" type="button">All Projects</button>
+        <button class="filter-btn" data-filter="fullstack" type="button">Full Stack</button>
+        <button class="filter-btn" data-filter="frontend" type="button">Frontend</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card glass-card reveal" data-category="fullstack">
+          <div class="project-art art-travel">
+            <div class="art-stars"></div><div class="travel-moon"></div>
+            <div class="travel-mountain mountain-one"></div><div class="travel-mountain mountain-two"></div>
+            <div class="travel-window"><span>AVENTRA</span><small>EXPLORE THE WORLD</small><div class="travel-lines"></div></div>
+            <span class="art-index">PROJECT / 01</span>
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><span>TRAVEL &amp; EXPLORATION</span><span>01</span></div>
+            <h3>Aventra — Travel Agency</h3>
+            <p>A travel website project focused on destinations, travel packages and booking experiences, with a React frontend and Java backend development.</p>
+            <div class="project-tags"><span>React.js</span><span>Java</span><span>Spring Boot</span><span>MySQL</span><span>JDBC</span></div>
+            <a href="https://github.com/Akanksha11-05/Travel-Agency-Website" target="_blank" rel="noopener noreferrer" class="project-link">Explore Project <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card glass-card reveal" data-category="frontend">
+          <div class="project-art art-login">
+            <span class="art-index">PROJECT / 02</span>
+            <div class="login-mockup"><div class="mockup-logo">&lt; login /&gt;</div><div class="mockup-line"></div><div class="mockup-input">Email address</div><div class="mockup-input">Password <span>••••••</span></div><div class="mockup-button">SIGN IN ↗</div></div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><span>WEB INTERFACE</span><span>02</span></div>
+            <h3>Login Form</h3>
+            <p>A login interface project built to practice form design, page layout, styling and JavaScript interactions.</p>
+            <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+            <a href="https://github.com/Akanksha11-05" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card glass-card reveal" data-category="frontend">
+          <div class="project-art art-student">
+            <span class="art-index">PROJECT / 03</span>
+            <div class="student-mockup">
+              <div class="student-top">STUDENT PORTAL</div>
+              <div class="student-row"><span></span><i></i><i></i></div>
+              <div class="student-row"><span></span><i></i><i></i></div>
+              <div class="student-row"><span></span><i></i><i></i></div>
+              <div class="student-bars"><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><span>STUDENT MANAGEMENT</span><span>03</span></div>
+            <h3>Student Management System</h3>
+            <p>A frontend project for managing student records with CRUD operations and LocalStorage for browser data persistence.</p>
+            <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>LocalStorage</span></div>
+            <a href="https://github.com/Akanksha11-05" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub <span>↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="contact">
+      <div class="contact-panel reveal">
+        <div class="contact-orb"></div>
+        <div class="contact-content">
+          <span class="section-kicker">04 / GET IN TOUCH</span>
+          <h2>Have an idea?<br><span class="gradient-text">Let's make it real.</span></h2>
+          <p>I'm open to opportunities where I can learn, contribute and grow as a developer.</p>
+          <a href="mailto:akankshachoure11@gmail.com" class="btn btn-primary">Say Hello <span>↗</span></a>
+          <div class="contact-socials">
+            <a href="https://github.com/Akanksha11-05" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/akanksha-choure-627214323/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="mailto:akankshachoure11@gmail.com">Email ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo"><span>&lt;</span>akanksha<span>/&gt;</span></a>
+      <p>Designed &amp; built with curiosity. © <span id="year"></span></p>
+      <a href="#home" class="back-top">BACK TO TOP ↑</a>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" type="button">↑</button>
+</body>
+</html>
